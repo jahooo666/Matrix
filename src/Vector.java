@@ -10,6 +10,7 @@ public class Vector {
     }
     public double get(int index){
         return drzewo.get(index);
+
     }
     public void printFormated(){
         drzewo.printFormated();
