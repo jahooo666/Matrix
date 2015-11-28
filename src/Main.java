@@ -1,21 +1,36 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
-        Node root = new Node(4,200.0);
-        root.insert(1,300);
-        root.insert(0,64);
-        root.insert(3,640);
-        root.insert(2,334);
-        root.insert(7,520);
-        root.insert(5,400);
-        root.insert(6,600);
 
-        root.printFormated(0);
+        FileMatrixReader reader = new FileMatrixReader();
+        reader.read();
 
-        System.out.println("el 1:" + root.get(1));
-        System.out.println("el 4:" + root.get(4));
-        System.out.println("el 2:" + root.get(2));
-        System.out.println("el 6:" + root.get(6));
+        /*
+        Vector wektor = new Vector();
+        try {
+            Scanner odczyt = new Scanner(new File("dane.txt"));
+            while(odczyt.hasNextInt()){
+                int index = odczyt.nextInt();
+                double value = odczyt.nextDouble();
+                wektor.insert(index,value);
+                //  System.out.println("dodaje teraz: " + index + " " + value);
+            }
 
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            System.out.println("Pliku nie znaleziono");
+        }
+        wektor.printFormated();
+        */
+
+      /*  System.out.println("Element numer 1 ma wartość:" + wektor.get(1));
+        System.out.println("Element numer 4 ma wartośc:" + wektor.get(4));
+        System.out.println("Element numer 2 ma wartość:" + wektor.get(2));
+        System.out.println("Element numer 6 ma wartość:" + wektor.get(6));
+       */
 
     }
 }
