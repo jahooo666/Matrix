@@ -7,10 +7,10 @@ public class FileMatrixReader {
     public FileMatrixReader() {
     }
 
-    public ArrayList<Matrix> read() {
+    public ArrayList<Matrix> read(String adres) {
         ArrayList<Matrix> macierze = new ArrayList<>();
         try {
-            Scanner odczyt = new Scanner(new File("dane.txt"));
+            Scanner odczyt = new Scanner(new File(adres));
             int length = 0;
             while (odczyt.hasNextLine()) {
                 String naglowek = odczyt.nextLine();
